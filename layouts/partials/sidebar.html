@@ -23,9 +23,9 @@
       {{ with .Site.Params.stackOverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.keybase }}<a href="{{ . }}"><i class="fa fa-lock fa-3x"></i></a>{{ end }}
+      {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
+      {{ with .Site.Params.keybase }}<a href="{{ . }}"><img class="fa" style="width: 2.572em; vertical-align: text-bottom; margin: 0; border: 0; border-radius: 0;" src="{{ "/keybase.svg" | absURL}}" alt="keybase" /></a>{{ end }}
       {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}
       {{ if .Site.Params.rss }}<a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
       </li>
