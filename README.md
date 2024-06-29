@@ -49,10 +49,13 @@ An example of what your site's `config.toml` could look like. All theme-specific
 baseurl = "http://example.com/"
 title = "Your site title"
 languageCode = "en-us"
-disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
 theme = "hyde-x"
 paginate = 10
+
+[services]
+    [services.disqus]
+        shortname = "your_disqus_shortname" # Optional, enable Disqus integration
 
 [params.author]
     name = "Your Name"
