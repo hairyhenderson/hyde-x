@@ -26,7 +26,7 @@
 
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}
-  {{ $authorName := .Site.Author.name }}
+  {{ $authorName := .Site.Params.Author.name }}
   {{ with .OutputFormats.Get "RSS" }}<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} &middot; {{ $authorName }}" />{{ end }}
 
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.defaultDescription }}{{ end }}">

@@ -54,7 +54,7 @@ MetaDataFormat = "toml"
 theme = "hyde-x"
 paginate = 10
 
-[author]
+[params.author]
     name = "Your Name"
 
 [permalinks]

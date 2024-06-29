@@ -7,7 +7,7 @@ tags = ["blog", "technical", "personal"]
 features = ["blog", "technical", "personal"]
 min_version = 0.14
 
-[author]
+[params.author]
     name = "Andrei Mihu"
     homepage = "http://andreimihu.com"
 
