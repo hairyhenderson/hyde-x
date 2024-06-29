@@ -3,9 +3,9 @@
     <div class="sidebar-about">
       {{ if isset .Site.Params "gravatarhash" }}
         <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarhash }}?s=200"
-             alt="gravatar" title="{{ .Site.Author.name }}">
+             alt="gravatar" title="{{ .Site.Params.Author.name }}">
       {{ end }}
-      <h1>{{ .Site.Author.name }}</h1>
+      <h1>{{ .Site.Params.Author.name }}</h1>
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
     </div>
 
